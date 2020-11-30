@@ -1,33 +1,13 @@
-.login-page-wrapp {
-  height: 100vh;
-}
-
-.login-form-wrap {
-  width: 50%;
-}
-
-.login-form-wrap .form-card {
-  max-width: 500px;
-  width: 100%;
-  margin-right: 30px;
-}
-
-.login-form-wrap .form-card .card-title {
-  color: var(--gray);
-}
-
 .login-greeting-screen {
-  background: var(--teal);
+  background: var(--gray-dark);
   width: 50%;
   padding: 20px;
 }
 
 .login-greeting-screen .login-greeting-screen-text {
   max-width: 500px;
-}
-
-.login-greeting-screen .login-greeting-screen-text {
   color: var(--white);
+  margin: 0 auto;
 }
 
 .login-greeting-screen .login-greeting-screen-title {
@@ -38,3 +18,63 @@
 .login-greeting-screen .login-greeting-screen-description {
   line-height: 1.4;
 }
+
+.login-page-wrapp {
+  min-height: 100vh;
+}
+
+.login-form-wrap {
+  width: 50%;
+  background-color: olive;
+}
+
+.login-form-wrap .form-card {
+  max-width: 500px;
+  width: 100%;
+  margin-right: 30px;
+  background-color: #343;
+}
+
+.login-form-wrap .form-card .card-title {
+  color: #dce5ee;
+}
+
+.login-form-wrap .form-card label {
+  color: #fff;
+}
+
+.news-wrapper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.news-wrapper ul img {
+  max-height: 14rem;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 960px) {
+  .login-page-wrapp {
+    flex-direction: column;
+  }
+
+  .login-greeting-screen, .login-form-wrap {
+    width: 100%;
+  }
+
+  .login-form-wrap {
+    padding: 40px 20px;
+  }
+
+  .login-form-wrap .form-card {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .login-greeting-screen .login-greeting-screen-title {
+    font-size: 30px;
+  }
+}
+
